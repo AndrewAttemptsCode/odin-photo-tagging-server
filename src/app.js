@@ -5,7 +5,7 @@ const routes = require("./routes/index");
 const app = express();
 
 const corsOptions = {
-  origin: process.env.CLIENT,
+  origin: process.env.CLIENT_URL,
 };
 
 app.use(express.json());
