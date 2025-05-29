@@ -1,9 +1,10 @@
 const { Router } = require("express");
+const controllers = require("../controllers/index");
 
 const router = Router();
 
-router.get("/", (req, res) => {
-  res.send("Leaderboard route");
-});
+router.get("/", controllers.leaderboard.getRankedPlayers);
+
+router.post("/", controllers.leaderboard.createEntry);
 
 module.exports = router;
