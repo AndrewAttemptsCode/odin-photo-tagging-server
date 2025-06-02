@@ -4,7 +4,9 @@
   "description": "https://www.theodinproject.com/lessons/nodejs-where-s-waldo-a-photo-tagging-app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "NODE_ENV=development && node --watch server.js",
+    "test": "NODE_ENV=test && jest"
   },
   "repository": {
     "type": "git",
